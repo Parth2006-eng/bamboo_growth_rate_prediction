@@ -58,4 +58,4 @@ if st.button("Generate Prediction"):
         caption="Prediction Result",
         use_container_width=True,
     )
-    st.success(f"🌱 Predicted Growth: {st.session_state.prediction:.2f} cm/month"
+    st.success(f"🌱 Predicted Growth: {st.session_state.prediction:.2f} cm/month")
