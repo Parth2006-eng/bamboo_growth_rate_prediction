@@ -2,21 +2,7 @@ from tensorflow.keras.models import load_model
 import streamlit as st
 import numpy as np
 import time
-def generate_output(user_input):
-    return f"Generated result for {user_input}"
 
-# Store results in session_state
-if "result" not in st.session_state:
-    st.session_state["result"] = None
-
-user_input = st.text_input("Enter something:")
-
-if st.button("Generate"):
-    st.session_state["result"] = generate_output(user_input)
-
-# Always show latest result
-if st.session_state["result"]:
-    st.success(st.session_state["result"])
 # Inject custom CSS
 st.markdown("""
     <style>
