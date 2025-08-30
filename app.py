@@ -26,6 +26,34 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+dark_theme_css = """
+<style>
+    body {
+        background-color: #0E1117;
+        color: #FFFFFF;
+    }
+    .stApp {
+        background-color: #0E1117;
+        color: #FFFFFF;
+    }
+    .css-1d391kg, .css-18e3th9 {
+        background-color: #262730;
+        color: #FFFFFF;
+    }
+    h1, h2, h3, h4, h5, h6, p, label {
+        color: #FFFFFF !important;
+    }
+    .stButton button {
+        background-color: #1DB954;
+        color: #FFFFFF;
+        border-radius: 8px;
+        border: none;
+    }
+    .stButton button:hover {
+        background-color: #14833b;
+        color: #FFFFFF;
+    }
+</style>
 
 # Load Keras model without compiling (ignores optimizer/loss/metrics)
 model = load_model("bamboo_growth_model.h5", compile=False)
