@@ -52,10 +52,9 @@ if st.button("Generate Prediction"):
 
     # Predict
     prediction = model.predict(features)
-
-    st.image(
+ st.image(
         "https://cdn.dribbble.com/userupload/21899904/file/original-c8a4ed87f00c7f1fb5d056ba0e5ff502.gif",
         caption="Prediction Result",
         use_container_width=True,
     )
-    st.success(f"🌱 Predicted Growth: {st.session_state.prediction:.2f} cm/month")
+    st.success(f"🌱 Predicted Growth: {prediction[0][0]:.2f} cm/month")
